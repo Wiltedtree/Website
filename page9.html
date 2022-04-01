@@ -1,44 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="description" content ="This is a cool Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will's Website</title>
-    <style>
-      .main_title {
-        background-color: pink;
-        background-size: cover;
-        position: relative;
-        right: 7px;
-        bottom: 25px;
-        width: 70%;
-      }
-      .navigation {
-        display: inline;
-      }
-      body {
-        background-color: #F8F1AE;
-      }
-      .par1 {
-        font-size: 2em;
-        font-family: 'Courier', serif;
-      }
-      .box {
-        width: 500px;
-        height: 500px;
-        background-color: black;
-      }
-      @keyframes change-color {
-        from {background-color: black:}
-        to {background-color: salmon;}
-      }
-      .box-animation {
-        animation-name: change-color;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <div class="main_title">
       <h1>Will's Website</h1>
       <ul>
@@ -56,14 +23,21 @@
     </div>
   </head>
   <body>
-    <div class="par1">
-      <p>
-        Hewwwwwwwwwo
-      </p>
+    <div class="section1">
+      <h2>Fruits</h2>
+      <ul>
+        <li><input type="checkbox">Apples</li>
+        <li><input type="checkbox">Bananas</li>
+        <li><input type="checkbox">Peaches</li>
+        <li><input type="checkbox" value="Oranges">Oranges</li>
+      </ul>
     </div>
-    <div class="box box-animation">
-
+    <div class="flex-container container">
+      <div style="align-item: flex-start" class="box1"><h1>1</h1></div>
+      <div class="box2 flex-item"><h1>2</h1></div>
+      <div class="box1 flex-item"><h1>3</h1></div>
+      <div style="align-self:center;" class="box2 flex-item"><h1>4</h1></div>
+      <div class="box1 flex-item"><h1>5</h1></div>
     </div>
-
   </body>
 </html>
